@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Article preview component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
+
 <body>
+  <main>
+    <article class="blog">
+      <picture class="blog__image">
+        <source>
+        <img src="./images/drawers.jpg" alt="dresser drawers" />
+      </picture>
+      <div class="blog__content">
+        <h1 class="blog__title"> Shift the overall look and feel by adding these wonderful touches to furniture in your
+          home</h1>
+        <p> Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.</p>
+        <div class="flex-group">
+          <img src="./images/avatar-michelle.jpg" class="profile" alt="Author - Michelle Appleton" />
+          <p class="author">Michelle Appleton</p>
+          <p class="date"> 28 Jun 2020</p>
+        </div>
+        <div class="flex-group">
+          <img src="./images/icon-share.svg" class="arrow-icon" alt="Share icon" />
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+          <p class="share-text">SHARE</p>
+          <img src="./images/icon-facebook.svg" alt="Facebook icon" />
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+          <img src="./images/icon-twitter.svg" alt="Twitter icon" />
+          <img src="./images/icon-pinterest.svg" alt="Pinterest icon" />
+        </div>
+      </div>
+    </article>
+  </main>
 
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
 </html>

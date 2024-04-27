@@ -1,0 +1,65 @@
+/*Global Variables*/
+:root {
+  --dark-grey-blue: #48556a; /*heading type*/
+  --dark-blue: #6d7f97; /*body type*/
+  --grey-blue: #9eafc2;
+  --light-grey-blue: #ecf2f8; /*bkgd color*/
+  --white: #ffffff;
+}
+
+/* Resetting box-sizing to border-box for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+body {
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  background-color: var(--light-grey-blue);
+  display: grid;
+  place-content: center;
+  margin: 1rem;
+}
+.flex-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
